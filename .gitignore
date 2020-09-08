@@ -13,6 +13,9 @@
 
 # /build/
 
+# /build/android
+/build/android
+
 # /build/autoconf_prepend-include/autoconf/
 /build/autoconf_prepend-include/autoconf/autoconf.m4f
 

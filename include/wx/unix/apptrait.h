@@ -82,7 +82,7 @@ public:
 
 #endif // wxUSE_SOCKETS
 
-#if wxUSE_EVENTLOOP_SOURCE
+#if wxUSE_CONSOLE_EVENTLOOP && wxUSE_EVENTLOOP_SOURCE
     virtual wxEventLoopSourcesManagerBase* GetEventLoopSourcesManager() wxOVERRIDE;
 #endif
 };

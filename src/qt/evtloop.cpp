@@ -245,13 +245,13 @@ public:
     }
 };
 
+#if wxUSE_CONSOLE_EVENTLOOP && wxUSE_EVENTLOOP_SOURCE
+
 wxEventLoopSourcesManagerBase* wxGUIAppTraits::GetEventLoopSourcesManager()
 {
     static wxQtEventLoopSourcesManager s_eventLoopSourcesManager;
     return &s_eventLoopSourcesManager;
 }
-
-#if !wxUSE_CONSOLE_EVENTLOOP
 
 // Use the GUI event loop sources manager if console support is disabled
 // (needed by some common code, will raise an undefinied reference if not done)

@@ -264,7 +264,7 @@ static int vwprintf(const wchar_t *format, va_list argptr)
 #endif // wxNEED_WPRINTF
 
 #ifdef wxNEED_VSWSCANF
-static int vswscanf(const wchar_t *ws, const wchar_t *format, va_list argptr)
+int vswscanf(const wchar_t *ws, const wchar_t *format, va_list argptr)
 {
     // The best we can do without proper Unicode support in glibc is to
     // convert the strings into MB representation and run ANSI version
